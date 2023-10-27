@@ -1,26 +1,15 @@
 body{
     background-color: rgb(234, 246, 230);
     font-family: 'Times New Roman', Times, serif;
-}
-header{
-    background-color: rgb(96, 142, 86);
+    display: grid;
+    grid-template-columns: 1fr 5fr ;
+    grid-gap: 0px;
+    padding: 10px;
+    margin: 10px;
     color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
-    padding-left: 40px; 
-    padding-right: 40px;
-    padding-top: 30px;
-    display: inline-block;
-}
-.navbar{
-    background-color: rgb(96, 142, 86);
-    color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100%;
-    padding-left: 40px; 
-    padding-right: 40px; 
-    padding-bottom: 40px; 
-    display: inline-block;
+    border: 2px dashed black;
+    border-radius: 5px;
+    
 }
 .largetxt{
     font-size: large;
@@ -31,38 +20,53 @@ font-weight: bold;
     font-size: small;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.pic{
-    border-radius: 100%;
-    padding: 10%;
-}
-main{
-   
-    background-color: rgb(217, 235, 220);
-   width: 100%;
-    display: inline-block;
-    height: 100%;
-    padding: 10px;
-}
-header{height: 50%;}
+
 
 .leftcolumn{
-    float: left;
-    width: 20%;
-   background-color: rgb(96, 142, 86) ;
-   margin-left: -8px;
-   margin-top: -8px;
-   margin-bottom: -20px ; 
-   margin-right: 5px;
-   position: fixed;
-   }
+    
+    background-color: rgb(96, 142, 86);
+    margin: -5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+
+}
 .rightcolumn{
-    float:right;
-    width: 80%;
-    margin-right: -8px;
-    margin-top: -8px;
-    margin-left: 2px;  
-    position: relative;
-    z-index: 10;
+    background-color: rgb(217, 235, 220);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: -5px;
+    border-left: 1px solid black;
+   
+}
+header{
+   
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    margin: 3px;
+    text-align: center;
+
+}
+
+.navbar{
+  
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 3px;
+    text-align: left;
+}
+.contact-box{
+    
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 3px;
+    text-align: left;
+}
+.pic{
+    border-radius: 100%;
+    
+}
+main{
+    padding: 10px;
 }
 .sections{
     background-color: rgba(234, 246, 230, 0.8);
@@ -72,26 +76,15 @@ header{height: 50%;}
     border: 1px solid black;
     border-radius: 5px;
 }
-
 .icons{
     border-radius: 100%;
-    
+    border: 3px solid black;
 }
 #contact{
     list-style: none;
     padding-left: 2px ;
     
 }
-
 .divider{
     border-top: 1px solid gray;
-}
-@media screen and (max-width:375px){
-    .leftcolumn,.rightcolumn{width :100%;padding :0}
-}
-@media screen and (max-width:400px){
-    nav a{
-        float: none;
-        width: 100%;
-    }
 }
